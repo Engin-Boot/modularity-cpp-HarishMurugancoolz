@@ -24,7 +24,7 @@ void testPairToNumber(
 void referenceManual()
 {
     std::cout<<"Reference Manual"<<std::endl;
-    for(int i_pairNumber=1;i_pairNumber<=25;i_pairNumber++)
+    for(int i_pairNumber=1;i_pairNumber<=TelCoColorCoder::numberOfMajorColors*TelCoColorCoder::numberOfMinorColors;i_pairNumber++)
     {
         TelCoColorCoder::ColorPair colorPair=TelCoColorCoder::GetColorFromPairNumber(i_pairNumber);
         std::cout<<i_pairNumber<<" "<<colorPair.ToString()<<std::endl;
