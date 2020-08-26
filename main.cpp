@@ -23,21 +23,19 @@ void testPairToNumber(
 }
 void referenceManual()
 {
-    cout<<"Reference Manual"<<endl;
-    for(int i_pairNumber;i_pairNumber<25;i_pairNumber++)
+    std::cout<<"Reference Manual"<<std::endl;
+    for(int i_pairNumber=1;i_pairNumber<=25;i_pairNumber++)
     {
-        TeleCoColorColor::ColorPair colorPair=TelCoColorCoder::GetColorFromPairNumber(pairNumber);
-        cout<<i_pairNumber<<" "<<colorPair.ToString()<<endl;
+        TelCoColorCoder::ColorPair colorPair=TelCoColorCoder::GetColorFromPairNumber(i_pairNumber);
+        std::cout<<i_pairNumber<<" "<<colorPair.ToString()<<std::endl;
     }
 }
 
 int main() {
     testNumberToPair(4, TelCoColorCoder::WHITE, TelCoColorCoder::BROWN);
     testNumberToPair(5, TelCoColorCoder::WHITE, TelCoColorCoder::SLATE);
-
     testPairToNumber(TelCoColorCoder::BLACK, TelCoColorCoder::ORANGE, 12);
     testPairToNumber(TelCoColorCoder::VIOLET, TelCoColorCoder::SLATE, 25);
     referenceManual();
-
     return 0;
 }
