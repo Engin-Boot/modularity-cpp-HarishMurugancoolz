@@ -39,7 +39,7 @@ namespace TelCoColorCoder
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
             (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
-        MinorColor minorColor =
+        MinorColor minorColor=
             (MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
         return ColorPair(majorColor, minorColor);
     }
