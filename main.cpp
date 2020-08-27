@@ -26,7 +26,7 @@ void testPairToNumber(
 }
 string referenceManual()
 {
-    string manual="Reference Manual \n";
+    string manual = "Reference Manual \n";
     for(int i_pairNumber=1;i_pairNumber<=numberOfMajorColors*numberOfMinorColors;i_pairNumber++)
     {
         TelCoColorCoder::ColorPair colorPair=TelCoColorCoder::GetColorFromPairNumber(i_pairNumber);
