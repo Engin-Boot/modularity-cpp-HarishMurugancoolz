@@ -2,6 +2,7 @@
 #include <assert.h>
 #include <string>
 #include "TelCoColorCoder.h"
+using namespace TelCoColorCoder;
 using namespace std;
 void testNumberToPair(int pairNumber,
     TelCoColorCoder::MajorColor expectedMajor,
@@ -26,7 +27,7 @@ void testPairToNumber(
 string referenceManual()
 {
     string manual="Reference Manual \n";
-    for(int i_pairNumber=1;i_pairNumber<=TelCoColorCoder::numberOfMajorColors*TelCoColorCoder::numberOfMinorColors;i_pairNumber++)
+    for(int i_pairNumber=1;i_pairNumber<=numberOfMajorColors*numberOfMinorColors;i_pairNumber++)
     {
         TelCoColorCoder::ColorPair colorPair=TelCoColorCoder::GetColorFromPairNumber(i_pairNumber);
         manual+=to_string(i_pairNumber);
